@@ -1,0 +1,147 @@
+@import "/home/taylor/.config/waybar/wallust/colors-waybar.css";
+
+/*
+          _                         _
+__      _| | ___   __ _  ___  _   _| |_
+\ \ /\ / / |/ _ \ / _` |/ _ \| | | | __|
+ \ V  V /| | (_) | (_| | (_) | |_| | |_
+  \_/\_/ |_|\___/ \__, |\___/ \__,_|\__|
+                  |___/
+
+by Stephan Raabe (2023)
+-----------------------------------------------------
+*/
+
+/* -----------------------------------------------------
+ * Import Pywal colors
+ * ----------------------------------------------------- */
+/*@import '../../.cache/wal/colors-wlogout.css';*/
+
+/* -----------------------------------------------------
+ * General
+ * ----------------------------------------------------- */
+
+* {
+    font-family: "Inter Display Light", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+	font-size: 16pt;
+	background-image: none;
+	transition: 200ms;
+	box-shadow: none;
+}
+
+window {
+	background-image: url("/home/taylor/.config/wallpapers/.current_lockscreen.png");
+	background-size: cover;
+	background-position: center;
+}
+
+button {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: rgba(200, 220, 255, 0);
+	/* animation: gradient_f 20s ease-in infinite; */
+	border-radius: 80px; /* Increased border radius for a more rounded look */
+	border:0px;
+	transition: all 0.2s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+button:focus {
+}
+
+button:hover {
+    /* background-color: #fff; */
+	opacity: 0.8;
+    color: #000;
+    margin: 30px;
+    border-radius: 80px;
+    /* box-shadow: 0 0 50px #fff; */
+}
+
+/* Adjust the size of the icon or content inside the button */
+button span {
+    font-size: 1.2em; /* Increase the font size */
+}
+
+/*
+-----------------------------------------------------
+Buttons
+-----------------------------------------------------
+*/
+
+#lock {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/light/lock.png"));
+	color: @color13;
+	background-size: 60px;
+}
+#lock:hover {
+	background-image: image(url("icons/hover/lock.png"));
+	color: @foreground;
+	background-size: 85px;
+}
+
+#logout {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/light/logout.png"));
+	color: @color13;
+	background-size: 60px;
+}
+#logout:hover {
+	background-image: image(url("icons/hover/logout.png"));
+	color: @foreground;
+	background-size: 85px;
+}
+
+#sleep {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/light/sleep.png"));
+	color: @color13;
+	background-size: 60px;
+}
+#sleep:hover {
+	background-image: image(url("icons/hover/sleep.png"));
+	color: @foreground;
+	background-size: 85px;
+}
+
+#shutdown {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/light/shutdown.png"));
+	color: @color13;
+	background-size: 60px;
+}
+#shutdown:hover {
+	background-image: image(url("icons/hover/shutdown.png"));
+	color: @foreground;
+	background-size: 85px;
+}
+
+#reboot {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/light/reboot.png"));
+	color: @color13;
+	background-size: 60px;
+}
+#reboot:hover {
+	background-image: image(url("icons/hover/reboot.png"));
+	color: @foreground;
+	background-size: 85px;
+}
+
+#windows {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/light/windows.png"));
+	color: @color13;
+	background-size: 60px;
+}
+#windows:hover {
+	background-image: image(url("icons/hover/windows.png"));
+	color: @foreground;
+	background-size: 85px;
+}

@@ -1,0 +1,76 @@
+@import "/home/taylor/.config/waybar/wallust/colors-waybar.css";
+
+window {
+    background-color: rgba(0,0,0,0.8);
+    opacity: 1;
+}
+
+#outer-box {
+margin: 15px;
+}
+
+#input {
+margin: 5px 5px 10px 5px;
+background-color: rgba(0,0,0,0);
+border: none !important;
+box-shadow: none !important;
+color: @color13;
+font-size: 18px;
+outline: 0 !important;
+border-radius: 0;
+}
+
+#input > image {
+color: @color13;
+margin: 0 10px 0 0;
+}
+
+#input > image.left {
+margin: 0 10px 0 0;
+}
+
+#input > image.right {
+margin: 0;
+}
+
+#scroll {
+margin: 2px;
+/* border: 2px solid rgba(255,255,255,0); */
+background-color: @base;
+font-size: 16px;
+color: #f8f8f2;
+border-radius: 10;
+}
+
+#scroll label {
+margin: 2px 0px;
+}
+
+#entry {
+margin: 2px 2px;
+border: 2px;
+min-width: 50px;
+max-width: 100px;
+color: @color13;
+}
+#entry:selected {
+background-color: rgba(255,255,255,0.2);
+border-radius: 10;
+box-shadow: 0px 0px 5px rgba(255,255,255,0.2);
+color: @color13;
+/* border: 2px solid @mauve; */
+}
+
+#img {
+margin: 5px;
+}
+#img:selected {
+}
+
+#text {
+margin: 5px;
+border: none;
+color:@color13;
+}
+#text:selected {
+}
